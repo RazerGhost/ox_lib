@@ -31,12 +31,12 @@ const useStyles = createStyles((theme) => ({
     },
   },
   backgroundCircle: {
-    fill: theme.colors.dark[6],
+    fill: theme.colors.dark[9],
   },
   centerCircle: {
     fill: theme.fn.primaryColor(),
     color: '#fff',
-    stroke: theme.colors.dark[6],
+    stroke: theme.colors.dark[9],
     strokeWidth: 4,
     '&:hover': {
       fill: theme.colors[theme.primaryColor][theme.fn.primaryShade() - 1],
@@ -136,7 +136,7 @@ const RadialMenu: React.FC = () => {
               const iconY = 175 + cosAngle * radius;
               const iconWidth = Math.min(Math.max(item.iconWidth || 50, 0), 100);
               const iconHeight = Math.min(Math.max(item.iconHeight || 50, 0), 100);
-              
+
 
               return (
                 <>
